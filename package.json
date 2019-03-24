@@ -1,0 +1,14 @@
+{
+	"name": "sumandevs_project",
+	"version": "1.0.0",
+	"description": "landing page for sumandevs",
+	"main": "index.js",
+	"scripts": {
+		"compile:sass": "node-sass sass/main.scss css/style.css -w"
+	},
+	"author": "Suman Tapader",
+	"license": "ISC",
+	"devDependencies": {
+		"node-sass": "^4.11.0"
+	}
+}

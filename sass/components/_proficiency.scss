@@ -1,0 +1,39 @@
+.proficiency {
+	width: 100%;
+	&__level {
+		width: 100%;
+		background-color: #d2d2d2;
+		height: 2.5rem;
+		border-radius: 2rem;
+		margin-top: .7rem;
+
+		&__percent {
+			height: 100%;
+			border-radius: inherit;
+			background-color: $color-dark-blue;
+			text-align: center;
+
+			span {
+				color: $color-white;
+				margin: auto;
+				font-size: 1.4rem;
+			}
+		}
+
+		.sixty {
+			width: 60%;
+		}
+
+		.eighty-five {
+			width: 85%;
+		}
+
+		.ninty-five {
+			width: 95%;
+		}
+
+		.thirty {
+			width: 30%;
+		}
+	}
+}

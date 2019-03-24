@@ -1,0 +1,110 @@
+.header {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	color: $color-white;
+	// background-color: aqua;
+	background-image: linear-gradient(to top, rgba($color-black, .90), rgba($color-black, .55)), url("../img/bg6.jpg");
+	// background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)),
+	// 	url("../images/hero.jpg");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+
+	&__navbar {
+		// background: #e74c4c;
+		width: 70%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 0 auto;
+		padding: 4rem 2rem;
+		position: relative;
+	}
+
+	&__brand-name {
+		letter-spacing: .3rem;
+		font-size: 3rem;
+		span {
+			text-transform: uppercase;
+			color: $color-light-blue;
+			font-style: oblique;
+		}
+	}
+
+	&__navigation {
+		ul {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			// justify-content: space-between;
+			// align-items: center;
+			// background-color: aquamarine;
+
+			li {
+				// padding: 1rem 2.5rem;
+				letter-spacing: 3px;
+				text-transform: uppercase;
+
+				a:link,
+				a:visited {
+					margin-right: 3rem;
+					font-size: 1.6rem;
+					color: $color-light-grey;
+					display: inline-block;
+					cursor: pointer;
+					transition: all .35s;
+					padding: .5rem .2rem;
+					backface-visibility: hidden;
+					font-weight: 600;
+					position: relative;
+					// background-color: tomato;
+					// background-color: cornflowerblue;
+				}
+
+				a:link:hover,
+				a:visited:hover {
+					transform: translateY(-4px);
+					// animation: upAndDown 600ms ease-out .11s;
+					// background-color: crimson;
+					// border-bottom: 1px solid crimson;
+				}
+
+				a::after {
+					content: "";
+					display: inline-block;
+					height: 100%;
+					width: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: -1;
+					transition: all .15s;
+					backface-visibility: hidden;
+					// transform: scaleX(0);
+					// background-color: tomato;
+				}
+
+				a:hover::after {
+					border-bottom: 2px solid $color-light-blue;
+					// border-top: 1px solid crimson;
+					z-index: -1;
+					transform: scaleX(1) scaleY(1);
+					opacity: .85;
+				}
+			}
+		}
+	}
+
+	&__text-box {
+		position: absolute;
+		// background-color: cornflowerblue;
+		padding: 1rem;
+		top: 44%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		width: 100%;
+	}
+}

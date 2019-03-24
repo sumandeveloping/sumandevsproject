@@ -1,0 +1,76 @@
+.heading__primary {
+	margin-bottom: 10rem;
+	text-transform: uppercase;
+	backface-visibility: hidden;
+
+	&--main {
+		font-size: 3.5rem;
+		letter-spacing: .8rem;
+		display: block;
+		color: $color-white;
+		animation: moveFromLeft 1s ease-out;
+	}
+
+	&--sub {
+		font-size: 2rem;
+		color: honeydew;
+		letter-spacing: 1.6rem;
+		display: block;
+		margin-top: .5rem;
+		animation: moveFromRight 1s ease-out;
+	}
+}
+
+.heading-tartiary {
+	font-size: 3.5rem;
+}
+
+.lead {
+	font-size: $default-font-size;
+	color: #535656;
+}
+
+.skill-icon {
+	font-size: 9rem;
+}
+
+.html {
+	color: #ea6160;
+}
+
+.css {
+	color: #199cea;
+}
+
+.javascript {
+	color: #dcce12;
+}
+
+.node {
+	color: #34dc4a;
+}
+
+.php {
+	color: #bf03b8;
+}
+
+.bootstrap {
+	color: purple;
+}
+
+.small--heading {
+	font-size: 1.8rem;
+	color: #4ab1d4cc;
+	transition: all .35s;
+	cursor: pointer;
+	letter-spacing: 2px;
+	&:hover {
+		color: #ff5400;
+	}
+}
+
+.paragraph {
+	font-size: 1.45rem;
+	font-weight: 400;
+	color: #5a5657;
+}

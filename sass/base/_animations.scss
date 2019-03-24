@@ -1,0 +1,87 @@
+//Animation
+
+@keyframes upAndDown {
+	15% {
+		transform-origin: center center;
+		transform: scale(1.1, 1.1);
+	}
+	45% {
+		transform-origin: center center;
+		transform: scale(.9, .9);
+	}
+	70% {
+		transform-origin: center center;
+		transform: scale(1.1, 1.1);
+	}
+	100% {
+		transform-origin: center center;
+		transform: scale(1, 1);
+	}
+}
+
+@keyframes moveFromLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-150px);
+	}
+	75% {
+		opacity: 1;
+		transform: translateX(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes moveFromRight {
+	0% {
+		opacity: 0;
+		transform: translateX(150px);
+	}
+	75% {
+		opacity: 1;
+		transform: translateX(-20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes moveFromDownToUp {
+	0% {
+		opacity: 0;
+		transform: translateY(150px);
+	}
+	75% {
+		opacity: 1;
+		transform: translateY(-10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes pulseEffect1 {
+	from {
+		opacity: .4;
+		transform: scale(0.5);
+	}
+	to {
+		opacity: 0;
+		transform: scale(7.5);
+	}
+}
+
+@keyframes pulseEffect2 {
+	from {
+		opacity: 0.6;
+		transform: scale(0);
+	}
+	to {
+		opacity: 0;
+		transform: scale(6);
+	}
+}
